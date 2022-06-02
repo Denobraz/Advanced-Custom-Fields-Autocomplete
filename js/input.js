@@ -11,7 +11,7 @@
 				
 				$.getJSON( ajaxurl, { 
 						'action' : 'autocomplete_ajax',
-						'field_key' : $el.data('field_name'),
+						'field_key' : $el.attr('data-key'),
 						'request' : request.term.trim()
 					}, function( data ){
 					
